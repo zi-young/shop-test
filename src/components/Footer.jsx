@@ -7,7 +7,7 @@ const Footer = () => {
         <div className='foot-bg'>
             <div className="container">
                 <div className="foot-addr">
-                    <h3 className='foot-logo'><img src="https://zi-young.github.io/goodsShop/img/logo1.png" alt="logo" /></h3>
+                    <h3 className='foot-logo'><img src={process.env.PUBLIC_URL + '/img/logo1.png'} alt='logo image'/></h3>
                     <address>서울 서초구 서초동 1153 우성빌딩</address>
                     <div className="copy">
                         &copy; 2023 Inc.All rights reserved.

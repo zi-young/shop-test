@@ -12,9 +12,9 @@ import { Link } from "react-router-dom";
 const MainPage = () => {
     const [product, setProducts] = useState([]);
     useEffect(() => {   
-        let url = "https://4ad88ba8-1261-4c6f-b0c3-c6a35416cecd.mock.pstmn.io/products";
+        let url = "http://localhost:8080/products";
             axios.get(url).then((result)=>{
-                const products = result.data.products;
+                const products = result.data.product;
                 setProducts(products)
             }).catch((error)=>{
                 console.log(error)

@@ -28,14 +28,15 @@ const Mainslide = () => {
             
                 loop={true}
             >
-                <SwiperSlide className='slide-img'><img src="https://zi-young.github.io/goodsShop/img/mainslide/slide1.jpg" alt="" /></SwiperSlide>
-                <SwiperSlide className='slide-img'><img src="https://zi-young.github.io/goodsShop/img/mainslide/slide2.jpg" alt="" /></SwiperSlide>
-                <SwiperSlide className='slide-img'><img src="https://zi-young.github.io/goodsShop/img/mainslide/slide3.jpg" alt="" /></SwiperSlide>
-                <SwiperSlide className='slide-img'><img src="https://zi-young.github.io/goodsShop/img/mainslide/slide4.jpg" alt="" /></SwiperSlide>
-                <SwiperSlide className='slide-img'><img src="https://zi-young.github.io/goodsShop/img/mainslide/slide5.jpg" alt="" /></SwiperSlide>
-                <SwiperSlide className='slide-img'><img src="https://zi-young.github.io/goodsShop/img/mainslide/slide6.jpg" alt="" /></SwiperSlide>
-                <SwiperSlide className='slide-img'><img src="https://zi-young.github.io/goodsShop/img/mainslide/slide7.jpg" alt="" /></SwiperSlide>
-                <SwiperSlide className='slide-img'><img src="https://zi-young.github.io/goodsShop/img/mainslide/slide8.jpg" alt="" /></SwiperSlide>
+                <SwiperSlide className='slide-img'><img src={process.env.PUBLIC_URL + '/img/mainslide/slide1.jpg'} alt='logo image'/></SwiperSlide>
+                <SwiperSlide className='slide-img'><img src={process.env.PUBLIC_URL + '/img/mainslide/slide2.jpg'} alt='logo image'/></SwiperSlide>
+                <SwiperSlide className='slide-img'><img src={process.env.PUBLIC_URL + '/img/mainslide/slide3.jpg'} alt='logo image'/></SwiperSlide>
+                <SwiperSlide className='slide-img'><img src={process.env.PUBLIC_URL + '/img/mainslide/slide4.jpg'} alt='logo image'/></SwiperSlide>
+                <SwiperSlide className='slide-img'><img src={process.env.PUBLIC_URL + '/img/mainslide/slide5.jpg'} alt='logo image'/></SwiperSlide>
+                <SwiperSlide className='slide-img'><img src={process.env.PUBLIC_URL + '/img/mainslide/slide6.jpg'} alt='logo image'/></SwiperSlide>
+                <SwiperSlide className='slide-img'><img src={process.env.PUBLIC_URL + '/img/mainslide/slide7.jpg'} alt='logo image'/></SwiperSlide>
+                <SwiperSlide className='slide-img'><img src={process.env.PUBLIC_URL + '/img/mainslide/slide8.jpg'} alt='logo image'/></SwiperSlide>
+
             </Swiper>
         </div>
     );

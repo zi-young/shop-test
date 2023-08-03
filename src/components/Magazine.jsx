@@ -44,17 +44,18 @@ const Magazine = () => {
                             },
                         }}
                     >
-                        <SwiperSlide className='mg-img'><img src="https://zi-young.github.io/goodsShop/img/magazine/img1.jpg" alt="" /></SwiperSlide>
-                        <SwiperSlide className='mg-img'><img src="https://zi-young.github.io/goodsShop/img/magazine/img2.jpg" alt="" /></SwiperSlide>
-                        <SwiperSlide className='mg-img'><img src="https://zi-young.github.io/goodsShop/img/magazine/img3.jpg" alt="" /></SwiperSlide>
-                        <SwiperSlide className='mg-img'><img src="https://zi-young.github.io/goodsShop/img/magazine/img4.jpg" alt="" /></SwiperSlide>
-                        <SwiperSlide className='mg-img'><img src="https://zi-young.github.io/goodsShop/img/magazine/img5.jpg" alt="" /></SwiperSlide>
-                        <SwiperSlide className='mg-img'><img src="https://zi-young.github.io/goodsShop/img/magazine/img6.jpg" alt="" /></SwiperSlide>
+                        <SwiperSlide className='mg-img'><img src={process.env.PUBLIC_URL + '/img/magazine/img1.jpg'} alt='logo image'/></SwiperSlide>
+                        <SwiperSlide className='mg-img'><img src={process.env.PUBLIC_URL + '/img/magazine/img2.jpg'} alt='logo image'/></SwiperSlide>
+                        <SwiperSlide className='mg-img'><img src={process.env.PUBLIC_URL + '/img/magazine/img3.jpg'} alt='logo image'/></SwiperSlide>
+                        <SwiperSlide className='mg-img'><img src={process.env.PUBLIC_URL + '/img/magazine/img4.jpg'} alt='logo image'/></SwiperSlide>
+                        <SwiperSlide className='mg-img'><img src={process.env.PUBLIC_URL + '/img/magazine/img5.jpg'} alt='logo image'/></SwiperSlide>
+                        <SwiperSlide className='mg-img'><img src={process.env.PUBLIC_URL + '/img/magazine/img6.jpg'} alt='logo image'/></SwiperSlide>
                     </Swiper>
                 </div>
             </div>
         </div>
     );
+
 };
 
 export default Magazine;
