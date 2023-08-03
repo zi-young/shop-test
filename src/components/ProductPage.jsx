@@ -20,7 +20,7 @@ const ProductPage = () => {
     }, []);
     console.log(product)
     if(product===null){
-        return <h2>상품정보를 받고 있습니다...</h2>
+        return <h2 className="loading">Loading...</h2>
     }
     return (
         <div>

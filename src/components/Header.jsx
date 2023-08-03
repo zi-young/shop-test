@@ -23,7 +23,7 @@ const Header = () => {
     return (
         <header className="header">
             <div className="container">
-                <h1><Link to="/"><img src={process.env.PUBLIC_URL + '/img/logo2.png'} alt='logo image'/></Link></h1>
+                <h1><Link to="/"><img className="logo" src={process.env.PUBLIC_URL + '/img/logo2.png'} alt='logo image'/></Link></h1>
                 <Navbar />
                 <div className="mobileBar">
                 {icon ? ( <GiHamburgerMenu className="hamburgerIcon" onClick={toggleMenu}  /> ) : (<AiOutlineClose className="closeIcon" onClick={toggleMenu} /> )}
