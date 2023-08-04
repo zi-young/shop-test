@@ -5,6 +5,7 @@ import Mdpick from './Mdpick';
 import Magazine from './Magazine';
 import axios from "axios";
 import { Link } from "react-router-dom";
+import { API_URL } from "../config/constants";
 
 
 
@@ -12,7 +13,7 @@ import { Link } from "react-router-dom";
 const MainPage = () => {
     const [product, setProducts] = useState([]);
     useEffect(() => {   
-        let url = "http://localhost:8080/products";
+        let url = `${API_URL}/products`;
             axios.get(url).then((result)=>{
                 const products = result.data.product;
                 setProducts(products)
@@ -21,6 +22,7 @@ const MainPage = () => {
             })
     }, []);
     console.log(product.imageUrl)
+    console.log(product)
 
     return (
         <div>
@@ -34,12 +36,12 @@ const MainPage = () => {
            <div className="products">
              <h2>products</h2>
                 <div id="product-list" className="p-list">
-                {product.map((product, idx) => {
+                {product.map((product) => {
                         return (
-                            <Link className="product-link" to={`/ProductPage/${idx}`}>
-                                <div className="product-card" key={idx}>
+                            <Link className="product-link" to={`/productPage/${product.id}`}>
+                                <div className="product-card" key={product.id}>
                                     <div>
-                                        <img src={product.imageUrl} alt="dd" className="product-img" />
+                                        <img src={`${API_URL}/${product.imageUrl}`} alt="" className="product-img" />
                                     </div>
                                     <div className="product-contents">
                                         <span className="product-name">{product.name}</span>

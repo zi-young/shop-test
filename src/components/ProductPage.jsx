@@ -3,6 +3,9 @@ import React, {useEffect, useState} from 'react';
 import { useParams,  useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import "./ProductPage.scss"
+import { API_URL } from "../config/constants";
+import dayjs from "dayjs";
+
 
 const ProductPage = () => {
     const {id} = useParams()
@@ -10,14 +13,15 @@ const ProductPage = () => {
     const [product, setProduct] = useState(null);
 
     useEffect(() => {
-        axios.get(`https://4ad88ba8-1261-4c6f-b0c3-c6a35416cecd.mock.pstmn.io/products/${id}`)
-        .then((result)=>{
-            setProduct(result.data)
-        })
-        .catch((error)=>{
-            console.log(error)
-        })
-    }, []);
+        axios.get(`${ API_URL }/products/${id}`)
+            .then((result) => {
+                setProduct(result.data.product); // 데이터 구조에 맞게 .product를 추가합니다.
+            })
+            .catch((error) => {
+                console.log(error);
+            });
+    }, [id]);
+
     console.log(product)
     if(product===null){
         return <h2 className="loading">Loading...</h2>
@@ -26,7 +30,7 @@ const ProductPage = () => {
         <div>
             <button onClick={()=> navigate(-1)} id="back-btn">before</button>
             <div id='image-box'>
-                <img src={`/${product.imageUrl}`} alt={product.name} />
+                <img src={`${API_URL}/${product.imageUrl}`} alt={product.name} />
             </div>
             <div id='profile-box'>
                 <span className="product-seller">{product.seller} <AiFillHeart /></span>
@@ -34,7 +38,7 @@ const ProductPage = () => {
             <div id='contents-box'>
                 <div id="name">{product.name}</div>
                 <div id="price">{product.price}</div>
-                <div id="createAt">2023.08.02</div>
+                <div id="createdAt">{dayjs(product.createdAt).format('YYYY년 MM월 DD일')}</div>
                 <div id="description">{product.description}</div>
             </div>
         </div>
