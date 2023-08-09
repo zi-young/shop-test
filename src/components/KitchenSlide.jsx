@@ -2,16 +2,14 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 
-
 import "swiper/css"; 
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
 
-const Kitchen = () => {
+const KitchenSlide = () => {
     return (
         <div className='Kitchen-swiperBox'>
-             <h2>kitchen</h2>
             <Swiper className='swiper-wrap'
                 modules={[Navigation, Pagination, Autoplay]}
                 spaceBetween={20}
@@ -34,11 +32,12 @@ const Kitchen = () => {
                 <SwiperSlide className='slide-img'><img src={process.env.PUBLIC_URL + '/img/kitchen/Kimg3.jpg'} alt='logo image'/></SwiperSlide>
                 <SwiperSlide className='slide-img'><img src={process.env.PUBLIC_URL + '/img/kitchen/Kimg4.jpg'} alt='logo image'/></SwiperSlide>
                 <SwiperSlide className='slide-img'><img src={process.env.PUBLIC_URL + '/img/kitchen/Kimg5.jpg'} alt='logo image'/></SwiperSlide>
-               
-
             </Swiper>
         </div>
-    );
+
+
+    )
 };
 
-export default Kitchen;
+
+export default KitchenSlide;

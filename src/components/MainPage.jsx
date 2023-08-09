@@ -36,7 +36,7 @@ const MainPage = () => {
            <div className="products">
              <h2>products</h2>
                 <div id="product-list" className="p-list">
-                {product.map((product) => {
+                    {product.map((product) => {
                         return (
                             <div className="product-card" key={product.id}>
                                 {product.soldout===1 ? <div className="product-blur"></div> : null}
