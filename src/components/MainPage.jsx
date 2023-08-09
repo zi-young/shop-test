@@ -34,7 +34,7 @@ const MainPage = () => {
                 </p>
             </div>
            <div className="products">
-             <h2>products</h2>
+             <h3>products</h3>
                 <div id="product-list" className="p-list">
                     {product.map((product) => {
                         return (

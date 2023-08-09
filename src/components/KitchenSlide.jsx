@@ -27,11 +27,11 @@ const KitchenSlide = () => {
             
                 loop={true}
             >
-                <SwiperSlide className='slide-img'><img src={process.env.PUBLIC_URL + '/img/kitchen/Kimg1.jpg'} alt='logo image'/></SwiperSlide>
-                <SwiperSlide className='slide-img'><img src={process.env.PUBLIC_URL + '/img/kitchen/Kimg2.jpg'} alt='logo image'/></SwiperSlide>
-                <SwiperSlide className='slide-img'><img src={process.env.PUBLIC_URL + '/img/kitchen/Kimg3.jpg'} alt='logo image'/></SwiperSlide>
-                <SwiperSlide className='slide-img'><img src={process.env.PUBLIC_URL + '/img/kitchen/Kimg4.jpg'} alt='logo image'/></SwiperSlide>
-                <SwiperSlide className='slide-img'><img src={process.env.PUBLIC_URL + '/img/kitchen/Kimg5.jpg'} alt='logo image'/></SwiperSlide>
+                <SwiperSlide className='slide-img'><img src={process.env.PUBLIC_URL + '/img/kitchen/Kimg1.jpg'} alt='kitchenImg'/></SwiperSlide>
+                <SwiperSlide className='slide-img'><img src={process.env.PUBLIC_URL + '/img/kitchen/Kimg2.jpg'} alt='kitchenImg'/></SwiperSlide>
+                <SwiperSlide className='slide-img'><img src={process.env.PUBLIC_URL + '/img/kitchen/Kimg3.jpg'} alt='kitchenImg'/></SwiperSlide>
+                <SwiperSlide className='slide-img'><img src={process.env.PUBLIC_URL + '/img/kitchen/Kimg4.jpg'} alt='kitchenImg'/></SwiperSlide>
+                <SwiperSlide className='slide-img'><img src={process.env.PUBLIC_URL + '/img/kitchen/Kimg5.jpg'} alt='kitchenImg'/></SwiperSlide>
             </Swiper>
         </div>
 

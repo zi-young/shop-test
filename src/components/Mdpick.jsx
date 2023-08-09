@@ -3,7 +3,7 @@ import React from 'react';
 const Mdpick = () => {
     return (
         <div className='mdpick'>
-            <h2>MD pick</h2>
+            <h3>MD pick</h3>
             <div className="mdList">
                 <ul>
                     <li>

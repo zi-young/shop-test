@@ -39,7 +39,7 @@ const ProductPage = () => {
 
     console.log(product)
     if(product===null){
-        return <h2 className="loading">Loading...</h2>
+        return <h3 className="loading">Loading...</h3>
     }
     return (
         <div className="product-wrap">

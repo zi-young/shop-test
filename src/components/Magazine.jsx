@@ -7,7 +7,7 @@ const Magazine = () => {
     return (
         <div className='magazine'>
             <div className="container">
-                <div className='titleWrap'><h2>Magazine</h2></div>
+                <div className='titleWrap'><h3>Magazine</h3></div>
                 <div className="magazineList">
                     <div className="magazine-box">
                             <span className='a1'>A</span>
