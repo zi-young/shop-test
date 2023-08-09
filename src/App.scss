@@ -556,14 +556,14 @@ $desktop-min: 1440px;
         width: 1440px;
         margin: 0 auto;
         padding: 50px 20px 100px 20px;
-        >.card{
+        .card{
             display: block;
             border: none;
-            >.cardimg{}
-            >.cardBody{
+            .cardimg{}
+            .cardBody{
                 padding: 20px 0 0 0;
                 position: relative;
-                >.header__brand{
+                .header__brand{
                     display: block;
                     color: #757575;
                     word-break: break-all;
@@ -571,7 +571,7 @@ $desktop-min: 1440px;
                     font-weight: 400;
                     line-height: 13px;
                 }
-                >.header__name{
+                .header__name{
                     max-height: 34px;
                     margin-top: 5px;
                     word-break: break-all;
@@ -603,7 +603,7 @@ $desktop-min: 1440px;
                         .price__price{}
                     }
                 }
-                >.delivery-badge{
+                .delivery-badge{
                     display: block;
                     margin: 4px 0 0;
                     >img{
@@ -611,7 +611,7 @@ $desktop-min: 1440px;
                         height: 15px;
                     }
                 }
-                >button{
+                button{
                     position: absolute;
                     right: 0;
                     margin-right: 4px;
