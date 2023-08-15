@@ -538,10 +538,13 @@ $desktop-min: 1440px;
 
     // kitchenSlide
     .Kitchen-swiperBox{
+        position: relative;
+        width: 850px;
+        margin: 0 auto;
+        cursor: pointer;
         clear: both;
-        margin-bottom: 100px;
+        margin-bottom: 70px;
         >.swiper-wrap{
-            position: relative;
             width: 850px;
             height: 250px;
         }
@@ -551,86 +554,69 @@ $desktop-min: 1440px;
         >.swiper-pagination { position: absolute; bottom: 20px;}
         >.swiper-pagination-bullet { width: 10px; height: 10px; background: #ccc; opacity: 1; margin: 0 5px !important;}
         >.swiper-pagination-bullet-active { transition: width .5s; border-radius: 5px; background: #fff; }
+
     }
 
     // kitchen
     .kitchenBox{
         width: 100%;
         max-width: 1440px;
-        padding: 100px 0px 100px 0px;
         margin: 0 auto;
-        .cardBox{
-            justify-content: space-between;
-            display: flex;
-            margin-bottom: 100px;
-            &:first-child{margin-left: 0;}
-            &:nth-child(4){margin-right: 0;}
-            .card{
-                display: block;
-                border: none;
-                .cardimg{}
-                .cardBody{
-                    padding: 20px 0 0 0;
-                    .header__brand{
-                        display: block;
+        padding: 70px 0 0 0;
+        >.container{
+            width: 100%;
+            .col-md-3{
+                margin-bottom: 100px;
+                .priceBox{
+                    margin: 5px 0;
+                    word-break: break-all;
+                    font-weight: 400;
+                    >h4{
                         color: #757575;
-                        word-break: break-all;
-                        font-size: 11px;
-                        font-weight: 400;
+                        font-size: 12px;
+                        margin-top: 10px;
                         line-height: 13px;
                     }
-                    .header__name{
-                        max-height: 34px;
-                        margin-top: 5px;
-                        word-break: break-all;
+                    >p{
+                        height: 30px;
+                        margin: 5px 0;
                         font-size: 13px;
-                        font-weight: 400;
                         line-height: 17px;
                         color: #000;
-                        transition: opacity .1s;
-                        overflow: hidden;
-                        text-overflow: ellipsis;
-                        display: -webkit-box;
-                        -webkit-line-clamp: 2;
-                        -webkit-box-orient: vertical;
-                        word-wrap: break-word;
                     }
-                    .flexBox{
+                    .percentageBox{
                         display: flex;
-                        justify-content: space-between;
-                        align-items: end;
-                        .priceBox{
-                            display: inline-block;;
-                            .item-price{
-                                margin: 2px 0 0;
-                                font-weight: bold;
-                                .item-price__rate{
-                                    color: #35c5f0;
-                                    margin-right: 4px;
-                                }
-                                .percentage{
-                                    color: #35c5f0;
-                                    margin-right: 4px;
-                                }
-                                .price__price{}
-                            }
-                        }
-                        .delivery-badge{
-                            display: block;
-                            margin: 4px 0 0;
-                            >img{
-                                width: auto;
-                                height: 15px;
-                            }
-                        }
-                        button{
-
+                        font-weight: bold;
+                        .percentage{
+                            color: #35c5f0;
                             margin-right: 4px;
-                            width: 80px;
-                            height: 40px;
-                            bottom: 0;
                         }
+                        >p{margin: 0;}
                     }
+                }
+                .review{
+                    display: flex;
+                    margin: 5px 0 5px 0;
+                    .icon{
+                        margin-right: 1px;
+                        color: #35c5f0;
+                        vertical-align: -2px;
+                    }
+                    .avg{
+                        margin-right: 2px;
+                        color: #424242;
+                        font-weight: 700;
+                        font-size: 13px;
+                    }
+                    .review-num{
+                        box-sizing: border-box;
+                        font-size: 13px;
+                        color: #777777;
+                        font-weight: bold;
+                    }
+                }
+                .badge-list{
+                    >.icon{    margin-right: 4px;}
                 }
             }
         }
