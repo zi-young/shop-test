@@ -15,7 +15,7 @@ const Mainslide = () => {
                 modules={[Navigation, Pagination, Autoplay]}
                 spaceBetween={20}
                 slidesPerView={1.2}
-                navigation
+                // navigation
                 pagination={{ clickable: true }}
     
                 style={{
