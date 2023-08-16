@@ -5,8 +5,8 @@ import Footer from './components/Footer';
 import {Routes, Route} from "react-router-dom"
 import Interior from "./pages/Interior.jsx";
 import Kitchen from "./pages/Kitchen.jsx";
-import Office from "./pages/Office.jsx";
-import Fabric from "./pages/Fabric.jsx";
+import Sale from "./pages/Sale";
+import OfflineStore from "./pages/OfflineStore.jsx";
 import UploadPage from './components/UploadPage';
 import ProductPage from './components/ProductPage';
 
@@ -21,8 +21,8 @@ function App() {
         <Route path="/" element={<MainPage />}/>
         <Route path="/interior" element={<Interior />}/>
         <Route path="/kitchen" element={<Kitchen />}/>
-        <Route path="/office" element={<Office />}/>
-        <Route path="/fabric" element={<Fabric />}/>
+        <Route path="/sale" element={<Sale />}/>
+        <Route path="/OfflineStore" element={<OfflineStore />}/>
         <Route path="/UploadPage" element={<UploadPage />} />
         <Route path="/ProductPage/:id" element={<ProductPage />} />
       </Routes>

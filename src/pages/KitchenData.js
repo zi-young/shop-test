@@ -6,7 +6,6 @@ let KitchenData = [
       price : 120000,
       review : "리뷰 5,123",
       avg : 4.5,
-      percentage : 43,
       image: "img/kitchen/listimg1.jpg"
     },
   
@@ -17,7 +16,6 @@ let KitchenData = [
       price : 110000,
       review : "리뷰 5,754",
       avg : 4.2,
-      percentage : 54,
       image: "img/kitchen/listimg2.jpg"
     },
   
@@ -28,7 +26,6 @@ let KitchenData = [
       price : 93000,
       review : "리뷰 6,754",
       avg : 4.8,
-      percentage : 23,
       image: "img/kitchen/listimg3.jpg"
     },
 
@@ -49,7 +46,6 @@ let KitchenData = [
       price : 13000,
       review : "리뷰 3,123",
       avg : 4.2,
-      percentage : 26,
       image: "img/kitchen/listimg5.jpg"
     },
   
@@ -60,7 +56,6 @@ let KitchenData = [
       price : 110000,
       review : "리뷰 8,975",
       avg : 4.2,
-      percentage : 54,
       image: "img/kitchen/listimg6.jpg"
     },
   
@@ -71,7 +66,6 @@ let KitchenData = [
       price : 68000,
       review : "리뷰 2,754",
       avg : 4.9,
-      percentage : 53,
       image: "img/kitchen/listimg7.jpg"
     },
 
@@ -82,7 +76,6 @@ let KitchenData = [
       price : 73000,
       review : "리뷰 3,754",
       avg : 4.9,
-      percentage : 24,
       image: "img/kitchen/listimg8.jpg"
     },
   ] 

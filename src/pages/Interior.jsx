@@ -9,7 +9,6 @@ import React from 'react';
 const interior = () => {
     return (
         <div className='Housewarming'>
-        <h3>Housewarming</h3>
         <div className="interiorList1 interior">
             <ul>
                 <li>

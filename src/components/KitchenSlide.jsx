@@ -19,7 +19,11 @@ const CustomPrevIcon = () => (
       </path>
     </g>
   </svg>
-  <svg class="active" width="40" height="40" viewBox="0 0 40 40" preserveAspectRatio="xMidYMid meet"><g fill="none"><circle cx="20" cy="20" r="20" fill="#35C5F0"></circle><path fill="#FFF" d="M17 20l7.5 7.5-1.4 1.4-8.4-8.4-.5-.5.5-.5 8.4-8.4 1.4 1.4-7.5 7.5z"></path></g></svg>
+  <svg class="active" width="40" height="40" viewBox="0 0 40 40" preserveAspectRatio="xMidYMid meet">
+    <g fill="none"><circle cx="20" cy="20" r="20" fill="#ed217c"></circle>
+    <path fill="#FFF" d="M17 20l7.5 7.5-1.4 1.4-8.4-8.4-.5-.5.5-.5 8.4-8.4 1.4 1.4-7.5 7.5z"></path>
+    </g>
+  </svg>;
 </div>
 
 );
@@ -34,7 +38,7 @@ const CustomNextIcon = () => (
     </svg>
     <svg class="active" width="40" height="40" viewBox="0 0 40 40" preserveAspectRatio="xMidYMid meet">
       <g fill="none" transform="matrix(-1 0 0 1 40 0)">
-        <circle cx="20" cy="20" r="20" fill="#35C5F0">
+        <circle cx="20" cy="20" r="20" fill="#ed217c">
         </circle>
         <path fill="#FFF" d="M17 20l7.5 7.5-1.4 1.4-8.4-8.4-.5-.5.5-.5 8.4-8.4 1.4 1.4-7.5 7.5z">
         </path>
@@ -46,7 +50,6 @@ const CustomNextIcon = () => (
 // styled-components를 사용하여 스타일을 생성
 const CustomNavigation = styled.div`
   position: relative;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
    
   .scroller__ui__left .scroller__ui__right{
   position: absolute;
@@ -54,8 +57,6 @@ const CustomNavigation = styled.div`
     width: 40px;
     height: 40px;
     border-radius: 100%;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
-
     transition: opacity .1s;
     cursor: pointer;
     z-index: 10;
@@ -66,7 +67,6 @@ const CustomNavigation = styled.div`
     top: -140px;
     left: -20px;
     z-index: 99;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
   }
   .scroller__ui__right{
     position: absolute;
@@ -110,7 +110,7 @@ const CustomNavigation = styled.div`
 }
 
 
-`;
+`
 
 const KitchenSlide = () => {
     return (

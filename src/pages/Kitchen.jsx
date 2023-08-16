@@ -12,7 +12,7 @@ function Kitchen() {
 
 return (
     <div className='kitchenBox'>
-                <KitchenSlide />   
+        <KitchenSlide />
         <div className='container'>
             <div className="row">
                 {kitchen.map((item, i) => {
@@ -22,10 +22,7 @@ return (
                             <div className='priceBox'>
                                 <h4>{item.title}</h4>
                                 <p>{item.content}</p>
-                                <div className='percentageBox'>
-                                    <p className='percentage'>{item.percentage}%</p>
-                                    <p style={{fontWeight: 'bold'}}>{item.price}</p>
-                                </div>
+                                <p style={{fontWeight: 'bold', display:'flex', alignItems: 'center'}}>{item.price}</p>
                             </div>
                             <p className='review'>
                                 <svg className='icon' style={{width: '20px', height: '20px'}} viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet">

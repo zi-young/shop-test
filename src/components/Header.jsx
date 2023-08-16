@@ -27,7 +27,6 @@ const Header = () => {
                 <Navbar />
                 <div className="mobileBar">
                 {icon ? ( <GiHamburgerMenu className="hamburgerIcon" onClick={toggleMenu}  /> ) : (<AiOutlineClose className="closeIcon" onClick={toggleMenu} /> )}
-        
                 <CSSTransition
                 in={!icon}
                 timeout={300}
@@ -35,7 +34,7 @@ const Header = () => {
                 unmountOnExit
                 ><Navbar /></CSSTransition>
                 </div>
-                <button className="btn" onClick={() => navigate('/UploadPage')}><CgSoftwareDownload /></button>
+                <button className="btn" onClick={() => navigate('/UploadPage')}><span className="upload">Upload &nbsp;</span><CgSoftwareDownload /></button>
             </div>
         </header>
     );

@@ -50,7 +50,6 @@ const UploadPage = () => {
                      </div>
                      )
                }
-                          
                    </Upload>
                 </Form.Item>
                 <Divider />
